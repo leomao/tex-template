@@ -5,31 +5,34 @@
 % \paperheight=160cm
 
 %%%%%%%%%%%%%%%引入Package%%%%%%%%%%%%%%%
-\usepackage[margin=3cm]{geometry} %上下左右距離邊緣2cm
+\usepackage[margin=3cm]{geometry} % 上下左右距離邊緣2cm
 \usepackage{amsmath,amsthm,amssymb} % 引入 AMS 數學環境
-\usepackage{graphicx}    %圖形插入用
-%\graphicspath{{images/}}  %搜尋圖片目錄
-\usepackage{wrapfig}     %文繞圖
-\usepackage{floatflt}    %浮動 figure
-\usepackage{fontspec}    %加這個就可以設定字體
-\usepackage{type1cm}	   %設定fontsize用
-\usepackage{titlesec}   %設定section等的字體
-\usepackage{titling}    %加強title 功能
-\usepackage{fancyhdr}   %頁首頁尾
-\usepackage{tabularx}   %加強版 table
+\usepackage{graphicx}    % 圖形插入用
+%\graphicspath{{images/}}  % 搜尋圖片目錄
+%\usepackage{wrapfig}     % 文繞圖
+%\usepackage{floatflt}    % 浮動 figure
+%\usepackage{float}       % 浮動環境
+%\usepackage{subfig}      % subfigures
+%\usepackage{caption3}    % caption 增強
+\usepackage{fontspec}    % 加這個就可以設定字體
+\usepackage{type1cm}	 % 設定fontsize用
+\usepackage{titlesec}   % 設定section等的字體
+\usepackage{titling}    % 加強title 功能
+\usepackage{fancyhdr}   % 頁首頁尾
+\usepackage{tabularx}   % 加強版 table
 \usepackage[square, comma, numbers, super, sort&compress]{natbib}
-%cite加強版
+% cite加強版
 \usepackage[unicode=true, pdfborder={0 0 0}, bookmarksdepth=-1]{hyperref}
-%ref加強版
-\usepackage{soul}       %highlight
-\usepackage{ulem}       %字加裝飾
-\usepackage[usenames, dvipsnames]{color}  %可以使用顏色
-\usepackage{framed}     %可以加文字方框
-\usepackage{enumerate}  %加強版enumerate
+% ref加強版
+%\usepackage{soul}       % highlight
+%\usepackage{ulem}       % 字加裝飾
+\usepackage[usenames, dvipsnames]{color}  % 可以使用顏色
+%\usepackage{framed}     % 可以加文字方框
+\usepackage{enumerate}  % 加強版enumerate
 
 %%%%%%%%%%%%%%中文 Environment%%%%%%%%%%%%%%%
-\usepackage[AutoFakeBold, CheckSingle, CJKmath]{xeCJK}  %xelatex 中文
-\usepackage{CJKulem}	%中文字裝飾
+\usepackage[AutoFakeBold, CheckSingle, CJKmath]{xeCJK}  % xelatex 中文
+%\usepackage{CJKulem}	% 中文字裝飾
 \setCJKmainfont{DFKai-SB}
 \setCJKsansfont{DFKai-SB}
 \setCJKmonofont{DFKai-SB}
@@ -95,6 +98,7 @@
 \newcommand{\np}[1]{\\[{#1}] \indent}
 \newcommand{\transpose}[1]{{#1}^\mathrm{T}}
 \newcommand{\adj}{\mathrm{adj}}
+\newcommand{\degree}{^\circ}
 
 %%%%%%%%%%%%%%%證明、結論、定義等等的環境%%%%%%%%%%%%%%%
 \renewcommand{\proofname}{\bf 證明:} %修改Proof 標頭
