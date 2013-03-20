@@ -7,6 +7,7 @@
 %%%%%%%%%%%%%%%引入Package%%%%%%%%%%%%%%%
 \usepackage[margin=3cm]{geometry} % 上下左右距離邊緣2cm
 \usepackage{amsmath,amsthm,amssymb} % 引入 AMS 數學環境
+\usepackage{yhmath} % math symbol
 \usepackage{graphicx}    % 圖形插入用
 %\graphicspath{{images/}}  % 搜尋圖片目錄
 %\usepackage{wrapfig}     % 文繞圖
@@ -14,6 +15,7 @@
 %\usepackage{float}       % 浮動環境
 %\usepackage{subfig}      % subfigures
 %\usepackage{caption3}    % caption 增強
+\usepackage{setspace}    % 控制空行
 \usepackage{fontspec}    % 加這個就可以設定字體
 \usepackage{type1cm}	 % 設定fontsize用
 \usepackage{titlesec}   % 設定section等的字體
@@ -62,10 +64,11 @@
 %\titleformat{command}[shape]{format}{label}
             %{編號與標題距離}{before}[after]
 
-%%%%%%%%%%%%counter settings%%%%%%%%%%%%%%%
+%%%%%%%%%%%%variable settings%%%%%%%%%%%%%%
 %\numberwithin{equation}{section}
 %\setcounter{secnumdepth}{4}  %章節標號深度
 %\setcounter{tocdepth}{1}  %目錄深度
+\setlength{\headheight}{15pt}
 
 %%%%%%%%%%%%%%%頁面設定%%%%%%%%%%%%%%%
 \setlength{\droptitle}{-1.5cm} %title 與上緣的間距
@@ -99,6 +102,10 @@
 \newcommand{\transpose}[1]{{#1}^\mathrm{T}}
 \newcommand{\adj}{\mathrm{adj}}
 \newcommand{\degree}{^\circ}
+\newcommand{\Arc}[1]{\wideparen{{#1}}}
+\newcommand{\Line}[1]{\overleftrightarrow{{#1}}}
+\newcommand{\Ray}[1]{\overrightarrow{{#1}}}
+\newcommand{\Segment}[1]{\overline{{#1}}}
 
 %%%%%%%%%%%%%%%證明、結論、定義等等的環境%%%%%%%%%%%%%%%
 \renewcommand{\proofname}{\bf 證明:} %修改Proof 標頭
