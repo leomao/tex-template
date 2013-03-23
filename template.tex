@@ -7,7 +7,7 @@
 %%%%%%%%%%%%%%%引入Package%%%%%%%%%%%%%%%
 \usepackage[margin=3cm]{geometry} % 上下左右距離邊緣2cm
 \usepackage{amsmath,amsthm,amssymb} % 引入 AMS 數學環境
-\usepackage{yhmath} % math symbol
+\usepackage{yhmath}      % math symbol
 \usepackage{graphicx}    % 圖形插入用
 %\graphicspath{{images/}}  % 搜尋圖片目錄
 %\usepackage{wrapfig}     % 文繞圖
@@ -73,8 +73,8 @@
 %%%%%%%%%%%%%%%頁面設定%%%%%%%%%%%%%%%
 \setlength{\droptitle}{-1.5cm} %title 與上緣的間距
 \parindent=24pt %設定縮排的距離
-%\pagestyle{empty}  %去除頁碼
 %\parskip=1ex  %設定行距
+%\pagestyle{empty}  % empty: 無頁碼 , fancy: fancyhdr
 
 %use with fancygdr
 %\lhead{\leftmark}
@@ -101,6 +101,7 @@
 \newcommand{\np}[1]{\\[{#1}] \indent}
 \newcommand{\transpose}[1]{{#1}^\mathrm{T}}
 \newcommand{\adj}{\mathrm{adj}}
+%%%% Geometry Symbol %%%%
 \newcommand{\degree}{^\circ}
 \newcommand{\Arc}[1]{\wideparen{{#1}}}
 \newcommand{\Line}[1]{\overleftrightarrow{{#1}}}
@@ -139,7 +140,8 @@
 %\thispagestyle{empty}  %去除頁碼
 %\thispagestyle{fancy}  %使用fancyhdr
 %\tableofcontents %目錄
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%include file here%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{thebibliography}{99}
 %\bibitem[1]{ex}\verb|http://www.example.com/|
