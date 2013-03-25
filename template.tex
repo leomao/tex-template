@@ -15,11 +15,11 @@
 %\usepackage{float}       % 浮動環境
 %\usepackage{subfig}      % subfigures
 %\usepackage{caption3}    % caption 增強
-\usepackage{setspace}    % 控制空行
+%\usepackage{setspace}    % 控制空行
 \usepackage{fontspec}    % 加這個就可以設定字體
 \usepackage{type1cm}	 % 設定fontsize用
 \usepackage{titlesec}   % 設定section等的字體
-\usepackage{titling}    % 加強title 功能
+\usepackage{titling}    % 加強 title 功能
 \usepackage{fancyhdr}   % 頁首頁尾
 \usepackage{tabularx}   % 加強版 table
 \usepackage[square, comma, numbers, super, sort&compress]{natbib}
@@ -52,15 +52,17 @@
 % \def\Huge{\fontsize{38}{57}\selectfont}
 
 %%%%%%%%%%%%%%%Theme Input%%%%%%%%%%%%%%%%
-%\input{themes\chapter\neat}
+%\input{themes/chapter/neat}
 
 %%%%%%%%%%%titlesec settings%%%%%%%%%%%%%%
+%\titleformat{\chapter}{\bf\Huge}
+            %{\arabic{section}}{0em}{}
 %\titleformat{\section}{\centering\Large}
-            %{\BCJKcount{\arabic{section}}、}{0em}{}
+            %{\arabic{section}}{0em}{}
 %\titleformat{\subsection}{\large}
-            %{\CJKcount{\arabic{subsection}}、}{0em}{}
+            %{\arabic{subsection}}{0em}{}
 %\titleformat{\subsubsection}{\bf\normalsize}
-            %{\SCJKcount{\arabic{subsubsection}}、}{0em}{}
+            %{\arabic{subsubsection}}{0em}{}
 %\titleformat{command}[shape]{format}{label}
             %{編號與標題距離}{before}[after]
 
@@ -68,13 +70,14 @@
 %\numberwithin{equation}{section}
 %\setcounter{secnumdepth}{4}  %章節標號深度
 %\setcounter{tocdepth}{1}  %目錄深度
-\setlength{\headheight}{15pt}
 
 %%%%%%%%%%%%%%%頁面設定%%%%%%%%%%%%%%%
+\setlength{\headheight}{15pt}  %with titling
 \setlength{\droptitle}{-1.5cm} %title 與上緣的間距
 \parindent=24pt %設定縮排的距離
 %\parskip=1ex  %設定行距
-%\pagestyle{empty}  % empty: 無頁碼 , fancy: fancyhdr
+%\pagestyle{empty}  % empty: 無頁碼
+%\pagestyle{fancy}  % fancy: fancyhdr
 
 %use with fancygdr
 %\lhead{\leftmark}
@@ -85,10 +88,12 @@
 %\rfoot{\thepage}
 %\renewcommand{\headrulewidth}{0.4pt}
 %\renewcommand{\footrulewidth}{0.4pt}
+
 %\fancypagestyle{firststyle}
 %{
-   %\fancyhf{}
-   %\fancyfoot[C]{\footnotesize Page \thepage\ of \pageref{LastPage}}
+  %\fancyhf{}
+  %\fancyfoot[C]{\footnotesize Page \thepage\ of \pageref{LastPage}}
+  %\renewcommand{\headrule}{\rule{\textwidth}{\headrulewidth}}
 %}
 
 %%%%%%%%%%%%%%%重定義一些command%%%%%%%%%%%%%%%
