@@ -1,0 +1,14 @@
+% require: xpatch package
+% input in preamble
+\makeatletter
+\gdef\tshortstack{\@ifnextchar[\@tshortstack{\@tshortstack[c]}}
+\let\@tshortstack\@shortstack
+\patchcmd\@tshortstack\vbox\vtop{}{}
+\makeatother
+
+\newenvironment{prolist}[2][4em]%
+{\begin{enumerate}[labelindent=0pt,labelsep=.5em,labelwidth= #1,itemsep=0.8em,leftmargin=!]
+  \renewcommand{\labelenumi}{\smash{\tshortstack[l]{%
+  \hfill \theenumi\\ \rule{ #1}{1pt} \\ \hfill #2}}}
+}%
+{\end{enumerate}}

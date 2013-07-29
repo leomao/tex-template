@@ -30,7 +30,8 @@
 %\usepackage{ulem}       % 字加裝飾
 \usepackage[usenames, dvipsnames]{color}  % 可以使用顏色
 %\usepackage{framed}     % 可以加文字方框
-\usepackage{enumerate}  % 加強版enumerate
+\usepackage[shortlabels]{enumitem}  % 加強版enumerate
+\usepackage{xpatch}
 
 %%%%%%%%%%%%%%中文 Environment%%%%%%%%%%%%%%%
 \usepackage[AutoFakeBold, CheckSingle, CJKmath]{xeCJK}  % xelatex 中文
@@ -44,15 +45,16 @@
 %\XeTeXlinebreakskip = 0pt plus 1pt     %這兩行一定要加，中文才能自動換行
 
 %%%%%%%%%%%%%%%字體大小設定%%%%%%%%%%%%%%%
-%\def\normalsize{\fontsize{10}{15}\selectfont}
-%\def\large{\fontsize{40}{60}\selectfont}
-%\def\Large{\fontsize{50}{75}\selectfont}
-%\def\LARGE{\fontsize{90}{20}\selectfont}
+% \def\normalsize{\fontsize{10}{15}\selectfont}
+% \def\large{\fontsize{40}{60}\selectfont}
+% \def\Large{\fontsize{50}{75}\selectfont}
+% \def\LARGE{\fontsize{90}{20}\selectfont}
 % \def\huge{\fontsize{34}{51}\selectfont}
 % \def\Huge{\fontsize{38}{57}\selectfont}
 
 %%%%%%%%%%%%%%%Theme Input%%%%%%%%%%%%%%%%
-%\input{themes/chapter/neat}
+% \input{themes/chapter/neat}
+\input{themes/env/problist}
 
 %%%%%%%%%%%titlesec settings%%%%%%%%%%%%%%
 %\titleformat{\chapter}{\bf\Huge}
@@ -146,7 +148,26 @@
 %\thispagestyle{fancy}  %使用fancyhdr
 %\tableofcontents %目錄
 %%%%%%%%%%%%%%%%%%%include file here%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\section{TEST}
+\begin{enumerate}[a.]
+  \item TEST
+  \item aaa
+\end{enumerate}
+\begin{prolist}{AAA}
+  \item TEST
+    asdfasdfasdfasdfasdfasdfasdf\\
+    asdfasdfasdfasdfasdfasdfasdf\\
+    asdfasdfasdfasdfasdfasdfasdf\\
+    asdfasdfasdfasdfasdfasdfasdf
+  \item
+    asdfasdfasdfasdfasdfasdfasdf\\
+    asdfasdfasdfasdfasdfasdfasdf\\
+    asdfasdfasdfasdfasdfasdfasdf\\
+    asdfasdfasdfasdfasdfasdfasdf
+\end{prolist}
+\[
+  \Arc{ABC}
+\]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{thebibliography}{99}
 %\bibitem[1]{ex}\verb|http://www.example.com/|
