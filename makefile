@@ -4,7 +4,7 @@
 # Use latexmk, xelatex, asymptote
 ######################################################
 MAINFILE = template
-JOBNAME = template
+JOBNAME = output
 
 SRCPATH = ./
 FIGPATH = ./images
@@ -22,11 +22,11 @@ ASYFILES = $(shell find $(FIGPATH) -type f -name '*.asy')
 
 all: $(JOBNAME).pdf
 
-$(MAINFILE).pdf: $(MAINFILE).tex $(TEXFILES) $(ASYFILES)
+$(JOBNAME).pdf: $(MAINFILE).tex $(TEXFILES) $(ASYFILES)
 	$(TEX) $(TEXFLAG) -jobname=$(JOBNAME) $(MAINFILE).tex
 
 $(FIGPATH)%.asy:
 	$(ASY) $(ASYFLAG) $@
 
 clean:
-	latexmk -CA
+	latexmk -CA $(JOBNAME).fdb_latexmk
