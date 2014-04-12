@@ -34,6 +34,7 @@
 % \usepackage{mdframed}   % 可以加文字方框
 % \usepackage{multicol}   % 多欄
 % \usepackage{siunitx}      % SI unit
+% \usepackage{dsfont}     % more mathbb
 
 %%%%%%%%%%%%%%%%%%%TikZ%%%%%%%%%%%%%%%%%%%%%%
 % \usepackage{tikz}
@@ -79,6 +80,7 @@
 % \graphicspath{{images/}}  % 搜尋圖片目錄
 
 %%%%%%%%%%%%%%%頁面設定%%%%%%%%%%%%%%%
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 \setlength{\headheight}{15pt}  %with titling
 \setlength{\droptitle}{-1.5cm} %title 與上緣的間距
 \parindent=24pt %設定縮排的距離
