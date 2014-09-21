@@ -43,7 +43,8 @@
 \usepackage[CheckSingle, CJKmath]{xeCJK}  % xelatex 中文
 \usepackage{CJKulem}	% 中文字裝飾
 \setCJKmainfont[BoldFont=cwTeX Q Hei]{cwTeX Q Ming}
-% \setCJKsansfont{cwTeX Q Kai}
+\setCJKsansfont[BoldFont=cwTeX Q Hei]{cwTeX Q Ming}
+\setCJKmonofont[BoldFont=cwTeX Q Hei]{cwTeX Q Ming}
 % 設定中文為系統上的字型，而英文不去更動，使用原TeX字型
 
 % \XeTeXlinebreaklocale "zh"             %這兩行一定要加，中文才能自動換行
@@ -174,6 +175,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \bibliographystyle{plain}
 % \begin{thebibliography}{99}
-% \bibitem[1]{ex}\verb|http://www.example.com/|
+% \bibitem[1]{ex}\url{http://www.example.com/}
 % \end{thebibliography}
 \end{document}
