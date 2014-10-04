@@ -20,9 +20,10 @@
 \usepackage[unicode=true, pdfborder={0 0 0}, bookmarksdepth=-1]{hyperref}
 % ref加強版
 \usepackage[usenames, dvipsnames]{color}  % 可以使用顏色
-\usepackage[shortlabels]{enumitem}  % 加強版enumerate
+\usepackage[shortlabels, inline]{enumitem}  % 加強版enumerate
 \usepackage{xpatch}
 
+% \usepackage{tabto}      % tab
 % \usepackage{soul}       % highlight
 % \usepackage{ulem}       % 字加裝飾
 % \usepackage{wrapfig}     % 文繞圖
@@ -84,6 +85,7 @@
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 \setlength{\headheight}{15pt}  %with titling
 \setlength{\droptitle}{-1.5cm} %title 與上緣的間距
+% \posttitle{\par\end{center}} % title 與內文的間距
 \parindent=24pt %設定縮排的距離
 % \parskip=1ex  %設定行距
 % \pagestyle{empty}  % empty: 無頁碼
@@ -106,7 +108,7 @@
   % \renewcommand{\headrule}{\rule{\textwidth}{\headrulewidth}}
 % }
 
-%%%%%%%%%%%%%%%重定義一些command%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%重定義一些名稱%%%%%%%%%%%%%%%
 % \renewcommand{\contentsname}{目錄}  %設定目錄的標題名稱
 % \renewcommand{\refname}{Reference}  %設定參考資料的標題名稱
 \renewcommand{\abstractname}{\LARGE Abstract} %設定摘要的標題名稱
