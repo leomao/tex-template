@@ -17,7 +17,7 @@
 \usepackage{tabularx}   % 加強版 table
 \usepackage[square, comma, numbers, super, sort&compress]{natbib}
 % cite加強版
-\usepackage[unicode=true, pdfborder={0 0 0}, bookmarksdepth=-1]{hyperref}
+\usepackage[unicode, pdfborder={0 0 0}, bookmarksdepth=-1]{hyperref}
 % ref加強版
 \usepackage[usenames, dvipsnames]{color}  % 可以使用顏色
 \usepackage[shortlabels, inline]{enumitem}  % 加強版enumerate
@@ -34,11 +34,12 @@
 % \usepackage{setspace}    % 控制空行
 % \usepackage{mdframed}   % 可以加文字方框
 % \usepackage{multicol}   % 多欄
-% \usepackage{siunitx}      % SI unit
+% \usepackage[abbreviations]{siunitx} % SI unit
 % \usepackage{dsfont}     % more mathbb
 
 %%%%%%%%%%%%%%%%%%%TikZ%%%%%%%%%%%%%%%%%%%%%%
 % \usepackage{tikz}
+% \usepackage{circuitikz}
 
 %%%%%%%%%%%%%%中文 Environment%%%%%%%%%%%%%%%
 % \usepackage[CheckSingle, CJKmath]{xeCJK}  % xelatex 中文
@@ -79,6 +80,7 @@
 % \numberwithin{equation}{section}
 % \setcounter{secnumdepth}{4}  %章節標號深度
 % \setcounter{tocdepth}{1}  %目錄深度
+% \setcounter{section}{0}  %section 起始 counter
 % \graphicspath{{images/}}  % 搜尋圖片目錄
 
 %%%%%%%%%%%%%%%頁面設定%%%%%%%%%%%%%%%
@@ -108,13 +110,12 @@
   % \renewcommand{\headrule}{\rule{\textwidth}{\headrulewidth}}
 % }
 
-%%%%%%%%%%%%%%%重定義一些名稱%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%重定義一些command%%%%%%%%%%%%%%%
 % \renewcommand{\contentsname}{目錄}  %設定目錄的標題名稱
 % \renewcommand{\refname}{Reference}  %設定參考資料的標題名稱
 \renewcommand{\abstractname}{\LARGE Abstract} %設定摘要的標題名稱
 
 %%%%%%%%%%%%%%%特殊功能函數符號設定%%%%%%%%%%%%%%%
-% \newcommand{\citet}[1]{\textsuperscript{\cite{#1}}}
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
 \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 \DeclarePairedDelimiter{\inpd}{\langle}{\rangle} % inner product
