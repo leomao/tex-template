@@ -4,7 +4,7 @@
 # Use latexmk, xelatex, asymptote
 ######################################################
 MAINFILE = template
-JOBNAME = output
+JOBNAME = template
 
 SRCPATH = ./
 FIGPATH = ./images

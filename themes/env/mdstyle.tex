@@ -1,0 +1,23 @@
+\makeatletter
+\def\mdf@@title{}
+\define@key{mdf}{title}{%
+  \def\mdf@@title{#1}
+}
+\mdfdefinestyle{recttitle}{%
+innertopmargin=5pt,%
+linewidth=0.5pt,%
+topline=true,%
+frametitleaboveskip=\dimexpr -\ht\strutbox \relax,%
+frametitle={%
+    \tikz[baseline=(current bounding box.east),outer sep=0pt]
+    \node[anchor=east,rectangle,fill=white]
+{\strut \mdf@@title};},
+}
+\makeatother
+
+\newenvironment{mdtheo}[1][]{%
+  \ifstrempty{#1}%
+  {\def\theotitle{Theorem~\thesection.\thetheorem}}%
+  {\def\theotitle{Theorem~\thesection.\thetheorem:~#1}}%
+  \begin{mdframed}[style=recttitle,title=\theotitle]\relax%
+}{\end{mdframed}}
