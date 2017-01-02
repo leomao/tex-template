@@ -21,19 +21,20 @@
 \usepackage[shortlabels, inline]{enumitem}
 \usepackage{xpatch}
 
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+
+%\usepackage[abbreviations]{siunitx}
+%\usepackage{mdframed}
+%\usepackage{multicol}
+%\usepackage{dsfont}
+%\usepackage{setspace}
 %\usepackage{tabto}
 %\usepackage{soul}
 %\usepackage{ulem}
 %\usepackage{wrapfig}
 %\usepackage{floatflt}
-%\usepackage{float}
-%\usepackage{caption}
-%\usepackage{subcaption}
-%\usepackage{setspace}
-%\usepackage{mdframed}
-%\usepackage{multicol}
-%\usepackage[abbreviations]{siunitx}
-%\usepackage{dsfont}
 
 %%%%%%%%%%%%%%%%%%%TikZ%%%%%%%%%%%%%%%%%%%%%%
 %\usepackage{tikz}
@@ -41,6 +42,7 @@
 %\usetikzlibrary{calc}
 %\usetikzlibrary{arrows,shapes}
 %\usetikzlibrary{positioning}
+%\tikzstyle{every picture}+=[remember picture]
 
 %%%%%%%%%%%%%%%%%font size%%%%%%%%%%%%%%%%%%%
 %\def\normalsize{\fontsize{10}{15}\selectfont}
@@ -123,14 +125,6 @@
 \DeclareMathOperator{\arcsech}{arcsech}
 \DeclareMathOperator{\arccsch}{arccsch}
 \DeclareMathOperator{\arccoth}{arccoth}
-\newcommand{\np}[1]{\\[{#1}] \indent}
-\newcommand{\transpose}[1]{{#1}^\mathrm{T}}
-%%%% Geometry Symbol %%%%
-\newcommand{\degree}{^\circ}
-\newcommand{\Arc}[1]{\wideparen{{#1}}}
-\newcommand{\Line}[1]{\overleftrightarrow{{#1}}}
-\newcommand{\Ray}[1]{\overrightarrow{{#1}}}
-\newcommand{\Segment}[1]{\overline{{#1}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\renewcommand{\proofname}{\bf proof:}
@@ -146,11 +140,6 @@
 \theoremstyle{mystyle}
 \newtheorem{theorem}{Theorem}
 \newtheorem{definition}{Definition}
-\newtheorem{formula}{Formula}
-\newtheorem{condition}{Condition}
-\newtheorem{supposition}{Supposition}
-\newtheorem{conclusion}{Conclusion}
-\newtheorem{corollary}{Corollary}
 \newtheorem{lemma}{Lemma}
 \newtheorem{property}{Property}
 

@@ -1,0 +1,35 @@
+%%%% Geometry Symbol %%%%
+\newcommand{\degree}{^\circ}
+\newcommand{\Arc}[1]{\wideparen{{#1}}}
+\newcommand{\Line}[1]{\overleftrightarrow{{#1}}}
+\newcommand{\Ray}[1]{\overrightarrow{{#1}}}
+\newcommand{\Segment}[1]{\overline{{#1}}}
+
+%%%% Common Symbol %%%%
+\newcommand{\Nb}{\mathbb{N}}
+\newcommand{\Zb}{\mathbb{Z}}
+\newcommand{\Qb}{\mathbb{Q}}
+\newcommand{\Rb}{\mathbb{R}}
+\newcommand{\Cb}{\mathbb{C}}
+
+%%%% mapping Symbol %%%%
+\newcommand\bij{\lhook\joinrel\twoheadrightarrow}
+\newcommand\oneto{\hookrightarrow}
+\newcommand\onto{\twoheadrightarrow}
+\newcommand\isoto{\xrightarrow{\sim}}
+\newcommand\acts{\curvearrowright}
+\newcommand\revacts{\curvearrowleft}
+
+%%%% set definition %%%%
+% just to make sure it exists
+\providecommand\given{}
+% can be useful to refer to this outside \Set
+\newcommand\SetSymbol[1][]{%
+  \nonscript\:#1\vert
+  \allowbreak
+  \nonscript\:
+\mathopen{}}
+\DeclarePairedDelimiterX\Set[1]\{\}{%
+  \renewcommand\given{\SetSymbol[\delimsize]}
+  \,#1\,
+}

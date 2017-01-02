@@ -12,26 +12,27 @@
 \usepackage{booktabs}
 \usepackage{xpatch}
 
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mdframed}
+
 %\usepackage{tabto}
 %\usepackage{soul}
 %\usepackage{ulem}
 %\usepackage{wrapfig}
 %\usepackage{floatflt}
-\usepackage{float}
-\usepackage{caption}
-\usepackage{subcaption}
 %\usepackage{setspace}
-\usepackage{mdframed}
 %\usepackage{multicol}
 %\usepackage[abbreviations]{siunitx}
 %\usepackage{dsfont}
 
 %%%%%%%%%%%%%%%%%%%TikZ%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
-%\usepackage{circuitikz}
 \usetikzlibrary{calc}
 \usetikzlibrary{arrows,shapes}
 \usetikzlibrary{positioning}
+%\tikzstyle{every picture}+=[remember picture]
 
 %%%%%%%%%%%%%%Chinese Environment%%%%%%%%%%%%%%%
 %\usepackage[CheckSingle, CJKmath]{xeCJK}  % xelatex CJK
@@ -48,16 +49,12 @@
 %\def\huge{\fontsize{18}{27}\selectfont}
 %\def\Huge{\fontsize{20}{30}\selectfont}
 
-%%%%%%%%%%%%%%%Theme Input%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%variable settings%%%%%%%%%%%%%%%%
 %\numberwithin{equation}{section}
 %\setcounter{secnumdepth}{4}
 %\setcounter{tocdepth}{1}
 %\setcounter{section}{0}
 %\graphicspath{{images/}}
-
-%%%%%%%%%%%%%%%page settings%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%renew command%%%%%%%%%%%%%%%%%
 % \renewcommand{\contentsname}{Table of Content}
@@ -82,32 +79,20 @@
 \DeclareMathOperator{\arcsech}{arcsech}
 \DeclareMathOperator{\arccsch}{arccsch}
 \DeclareMathOperator{\arccoth}{arccoth}
-\newcommand{\np}[1]{\\[{#1}] \indent}
-\newcommand{\transpose}[1]{{#1}^\mathrm{T}}
-%%%% Geometry Symbol %%%%
-\newcommand{\degree}{^\circ}
-\newcommand{\Arc}[1]{\wideparen{{#1}}}
-\newcommand{\Line}[1]{\overleftrightarrow{{#1}}}
-\newcommand{\Ray}[1]{\overrightarrow{{#1}}}
-\newcommand{\Segment}[1]{\overline{{#1}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\renewcommand{\proofname}{\bf proof:}
-\newtheoremstyle{mystyle}% custom style
-  {6pt}{15pt}%      top and bottom margin
-  {}%               content style
-  {}%               indent
-  {\bf}%            head style
-  {.}%              after head
-  {1em}%            distance between head and content
-  {}%               Theorem head spec (can be left empty, meaning 'normal')
+%\newtheoremstyle{mystyle}% custom style
+  %{6pt}{15pt}%      top and bottom margin
+  %{}%               content style
+  %{}%               indent
+  %{\bf}%            head style
+  %{.}%              after head
+  %{1em}%            distance between head and content
+  %{}%               Theorem head spec (can be left empty, meaning 'normal')
 
-\theoremstyle{mystyle}
-\newtheorem{formula}{Formula}
-\newtheorem{condition}{Condition}
-\newtheorem{supposition}{Supposition}
-\newtheorem{conclusion}{Conclusion}
-\newtheorem{property}{Property}
+%\theoremstyle{mystyle}
+%\newtheorem{property}{Property}
 
 %%%%%%%%%%%%%%Title information%%%%%%%%%%%%%%
 \title{}
