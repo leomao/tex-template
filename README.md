@@ -2,8 +2,10 @@
 
 My LaTeX template files
 
-Chinese Font Source:
-https://github.com/l10n-tw/cwtex-q-fonts
+recommened Chinese Font:
+https://www.google.com/get/noto/help/cjk/
+https://github.com/adobe-fonts/source-han-sans
+https://github.com/adobe-fonts/source-han-serif
 
 ## Slides template
 Use beamer theme: https://github.com/matze/mtheme (will be included in TexLive
