@@ -1,16 +1,28 @@
-%%%% Geometry Symbol %%%%
+%%%% Math Operators %%%%
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+%%%% Geometry Symbols %%%%
 \newcommand*{\degree}{^\circ}
 \newcommand*{\Arc}[1]{\wideparen{{#1}}}
 \newcommand*{\Line}[1]{\overleftrightarrow{{#1}}}
 \newcommand*{\Ray}[1]{\overrightarrow{{#1}}}
 \newcommand*{\Segment}[1]{\overline{{#1}}}
 
-%%%% Common Symbol %%%%
+%%%% Common Symbols %%%%
 \newcommand*{\Nb}{\mathbb{N}}
 \newcommand*{\Zb}{\mathbb{Z}}
 \newcommand*{\Qb}{\mathbb{Q}}
 \newcommand*{\Rb}{\mathbb{R}}
 \newcommand*{\Cb}{\mathbb{C}}
+\newcommand*{\Eb}{\mathbb{E}}
+\newcommand*{\Pb}{\mathbb{P}}
+
+%%%% Probability and Statistics Notations %%%%
+\DeclarePairedDelimiterXPP{\KL}[2]{D_\text{KL}}\lbrack\rbrack{}{{#1} \delimsize\Vert {#2}}
+\DeclarePairedDelimiterXPP{\Prob}[1]{\Pb}\lbrace\rbrace{}{#1}
+\DeclarePairedDelimiterXPP{\Ev}[1]{\Eb}\lbrack\rbrack{}{#1}
+\DeclarePairedDelimiterXPP{\Evr}[2]{\Eb_{#1}}\lbrack\rbrack{}{#2}
 
 %%%% mapping Symbol %%%%
 \newcommand*\bij{\lhook\joinrel\twoheadrightarrow}
